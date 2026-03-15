@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liseuse de Documents</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Intégration de la bibliothèque EPUB.js via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/epub.js/0.3.93/epub.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside id="sidebar">
+            <h2>Mes Documents</h2>
+            <ul id="document-list">
+                <!-- La liste des documents sera générée ici par JavaScript -->
+            </ul>
+        </aside>
+        <main id="viewer-area">
+            <div id="viewer-content">
+                <p>Sélectionnez un document dans la liste pour l'afficher ici.</p>
+            </div>
+            <div id="epub-nav">
+                <button id="prev">Précédent</button>
+                <button id="next">Suivant</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

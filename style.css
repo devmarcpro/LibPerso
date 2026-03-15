@@ -1,0 +1,83 @@
+/* Réinitialisation et styles de base */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden; /* Empêche le défilement du corps principal */
+}
+
+/* Conteneur principal avec Flexbox */
+.container {
+    display: flex;
+    height: 100%;
+}
+
+/* Barre latérale */
+#sidebar {
+    flex: 0 0 300px; /* Ne grandit pas, ne rétrécit pas, base de 300px */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto; /* Permet de faire défiler la liste si elle est longue */
+}
+
+#sidebar h2 {
+    margin-top: 0;
+}
+
+#document-list {
+    list-style: none;
+    padding: 0;
+}
+
+#document-list li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#document-list li a:hover {
+    background-color: #e2e2e2;
+}
+
+/* Zone de lecture principale */
+#viewer-area {
+    flex: 1; /* Prend tout l'espace restant */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#viewer-content {
+    flex: 1; /* Prend tout l'espace vertical disponible */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#viewer-content iframe, #viewer-content #epub-viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Navigation pour EPUB */
+#epub-nav {
+    display: none; /* Cachée par défaut */
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#epub-nav button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
