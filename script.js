@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- CONFIGURATION ---
     // Remplacez les valeurs ci-dessous par votre nom d'utilisateur et le nom de votre dépôt GitHub.
-    const GITHUB_USER = 'ciryl';
-    const GITHUB_REPO = 'deweysearch';
+    const GITHUB_USER = 'devmarcpro';
+    const GITHUB_REPO = 'LibPerso';
     // --- FIN DE LA CONFIGURATION ---
 
     const apiUrl = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/docs`;
